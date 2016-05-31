@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<div class="container">
+	<head>
+	  <title><%= full_title(yield(:title)) %></title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	  <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header" id="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<%= link_to image_tag("autochem_industrial_logo_white.png", alt: 'autochem industrial logo', class: "logo pull-left"), root_path, id: "logo" %>
+					<!-- <%= link_to "AutoChem Industrial", root_path, class: "navbar-brand" %>-->
+				</div>
+				<div class="collapse navbar-collapse" id="collapsemenu">
+					<ul class="nav navbar-nav navbar-pills">
+						<li class="<%= active_class(root_path) %>">
+							<%= link_to "Home", root_path %>
+						</li>
+						<li class="<%= active_class(static_pages_about_path) %>">
+							<%= link_to "About", static_pages_about_path %>
+						</li>
+						<li class="<%= active_class(static_pages_contact_us_path) %>">
+							<%= link_to "Contact Us", static_pages_contact_us_path %>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
 
-<%= yield %>
+			<%= yield %>
 
-</div>
+		</div>
+	</body>
+	<footer class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container">
+			<div class="navbar-footer">
+				<h6 class="text-center" id="footer-text">&#64;	2016 AutoChem Industrial. All Rights Reserved.</h6>
+			</div>
+		</div>
 
-</body>
+	</footer>
 </html>

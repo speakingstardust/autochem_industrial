@@ -1,0 +1,50 @@
+<% provide(:title, "Contact Us") %>
+
+<div class="row">
+	<div class="col-xs-12 text-center">
+		<h1>Contact us today!</h1>
+		<h4>Our representatives are <em>always</em> prepared to address your needs:</h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-4 contact">
+		<h3>Address:</h3>
+		<p>941 Stanford Rd
+		Lancaster, KY 40444</p>
+	</div>
+	<div class="col-xs-4 thumbnail">
+		<%= image_tag("cardboard_plane_cat.jpg", alt: "placeholder image", class: "pull-right img-rounded") %>
+		<p class="text-center">This is a placeholder image!</p>
+	</div>
+	<div class="col-xs-4 text-right contact">
+		<h3>Phone:</h3>
+		<p><b>Voice:</b></p>
+		<p>(859)792-2117</p>	
+		<p><b>Fax:</b></p>
+		<p>(859)792-2103</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-6 text-center" id="border-line">
+		<h3>Sales or Service:</h3>
+		<p>
+			<%= mail_to "shera@autochemky.com", "Shera Herndon", subject: "AutoChem Industrail Sales and Service" %>
+		</p>
+	</div>
+	<div class="col-xs-6 text-center">
+		<h3>Technical:</h3>
+		<p>
+			<%= mail_to "mark@autochemky.com", "Mark Herndon", subject: "AutoChem Industrial Technical" %>
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<hr>
+	</div>
+	<div class="col-xs-12">
+		<h5>Need help with or have a question about the AutoChem Industrial Website?</h5>
+
+		<p>Contact <%= mail_to "josh@autochemky.com", "Josh Pettyjohn", subject: "Help with AutoChem Industrial Website" %></p>
+	</div>
+</div>

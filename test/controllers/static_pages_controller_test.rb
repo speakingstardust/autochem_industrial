@@ -7,10 +7,10 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "AutoChem Industrial"
   end
 
-  test "should get help" do
-    get :help
+  test "should get contact us" do
+    get :contact_us
     assert_response :success
-    assert_select "title", "Help | AutoChem Industrial"
+    assert_select "title", "Contact Us | AutoChem Industrial"
   end
 
   test "should get about" do

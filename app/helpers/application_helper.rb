@@ -8,4 +8,9 @@ module ApplicationHelper
 			page_title + " | " + base_title
 		end
 	end
+
+	def active_class(link_path)
+		"active" if request.fullpath == link_path
+	end
+
 end

@@ -1,2 +1,127 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* Header */
+
+nav .logo {
+	width: 128px;
+}
+
+.navbar {
+	border: none;
+}
+
+.navbar-default {
+  background-color: #b11b2e;
+  border-color: #808080;
+}
+.navbar-default .navbar-brand {
+  color: #F5F5F5;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #F5F5F5;
+}
+.navbar-default .navbar-text {
+  color: #F5F5F5;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #F5F5F5;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #F5F5F5;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #b11b2e;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #F5F5F5;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #F5F5F5;
+  background-color: #808080;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #808080;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #F5F5F5;
+  background-color: #808080;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #F5F5F5;
+  background-color: #808080;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #F5F5F5;
+  background-color: #808080;
+}
+.navbar-default .navbar-toggle {
+  border-color: #808080;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #808080;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #F5F5F5;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #F5F5F5;
+}
+.navbar-default .navbar-link {
+  color: #F5F5F5;
+}
+.navbar-default .navbar-link:hover {
+  color: #F5F5F5;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #F5F5F5;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #F5F5F5;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #F5F5F5;
+    background-color: #808080;
+  }
+}
+
+/* Body */
+
+body {
+	padding-bottom: 70px;
+	background-color: #F5F5F5;
+}
+
+/* Contact Us */
+
+#border-line {
+	padding-right: 20px;
+	border-right: 1px solid #ccc;
+}
+
+.contact {
+	margin-top: -20px;
+}
+
+/* Footer */ 
+
+footer #footer-text {
+	color: #fff;
+}
+
