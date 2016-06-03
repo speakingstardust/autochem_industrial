@@ -12,42 +12,84 @@
 	</div>	
 </div> <!-- Row -->
 <div class="row">
-	<div class="col-xs-12">
-		<div class="media">
-			<div class="media-img pull-left">
-				<%= image_tag("Nest.jpg", alt: "Paint jig photo", class: "media-object") %>
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Dip Cleaning</h3>
-				<p>We provide state of the art dip cleaning for any and all parts that require regular cleaning. This end to end service can include transportation to and from our faclities, quality assurance for each part, and repairs.</p>
-			</div>
-		</div>
-		<div class="media">
-			<div class="media-img pull-left">
-				<%= image_tag("Facility.jpg", alt: "facility management photo", class: "media-object") %>
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Facility Management</h3>
-				<p>Let us be the experts in our field, while you focus on being an expert in yours! We will work with the client to complete a comprehensive and systematic analysis of every possible support service and need that the facility may have.</p>
-			</div>
-		</div>
-		<div class="media">
-			<div class="media-img pull-left">
-				<%= image_tag("custodial.jpg", alt: "general custodial photo", class: "media-object") %>
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">General Custodial</h3>
-				<p>Our custodial services provide a labor force that is committed to an adept, effectual, approach to all of their tasks and a truly transparent approach to billing for matierials and supplies.</p>
-			</div>
-		</div>
-		<div class="media">
-			<div class="media-img pull-left">
-				<%= image_tag("paint_booth.png", alt: "paint booth cleaning photo", class: "media-object") %>
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Industrial Deep Cleaning</h3>
-				<p>Utilizing our proprietary cleaning products and proccesses, we are able to deep clean any faciilty that may require periodic deep cleaning.</p>
-			</div>
-		</div>
+	<div class="col-xs-12 solutions-accordion">
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselctable="true">
+			<div class="panel panel-primary solutions-panel">
+				<div class="panel-heading" role="tab" id="dipcleanhead">
+					<h4 class="panel-title text-center">
+						<a href="#dipcleaning" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="dipcleaning">Dip Cleaning</a>
+					</h4>
+				</div>
+				<div class="collapse panel-collapse in" id="dipcleaning" role="tabpanel" aria-labelledby="dipcleanhead">
+					<div class="panel-body">
+						<div class="media">
+							<div class="media-img pull-left">
+								<%= image_tag("Nest.jpg", alt: "Paint jig photo", class: "media-object") %>
+							</div>
+							<div class="media-body">
+								<p>We provide state of the art dip cleaning for any and all parts that require regular cleaning. This end to end service can include transportation to and from our faclities, quality assurance for each part, and repairs.</p>
+							</div>
+						</div> <!-- media -->
+					</div>
+				</div>
+			</div><!-- Dip Cleaning panel -->
+			<div class="panel panel-primary solutions-panel">
+				<div class="panel-heading" role="tab" id="facilitymanagementhead">
+					<h4 class="panel-title text-center">
+						<a href="#facilitymanagement" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="facilitymanagement">Facility Management</a>
+					</h4>
+				</div>
+				<div class="collapse panel-collapse" id="facilitymanagement" role="tabpanel" aria-labelledby="facilitymanagementhead">
+					<div class="panel-body">
+						<div class="media">
+							<div class="media-img pull-right">
+								<%= image_tag("Facility.jpg", alt: "facility management photo", class: "media-object") %>
+							</div>
+							<div class="media-body">
+								<p>Let us be the experts in our field, while you focus on being an expert in yours! We will work with the client to complete a comprehensive and systematic analysis of every possible support service and need that the facility may have.</p>
+							</div>
+						</div><!-- media -->
+					</div>
+				</div>
+			</div><!-- panel -->
+			<div class="panel panel-primary solutions-panel">
+				<div class="panel-heading" role="tab" id="custodialthead">
+					<h4 class="panel-title text-center">
+						<a href="#custodial" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="custodial">General Custodial</a>
+					</h4>
+				</div>
+				<div class="collapse panel-collapse" id="custodial" role="tabpanel" aria-labelledby="custodialhead">
+					<div class="panel-body">
+						<div class="media">
+							<div class="media-img pull-left">
+								<%= image_tag("custodial.jpg", alt: "general custodial photo", class: "media-object") %>
+							</div>
+							<div class="media-body">
+								<p>Our custodial services provide a labor force that is committed to an adept, effectual, approach to all of their tasks and a truly transparent approach to billing for matierials and supplies.</p>
+							</div>
+						</div><!-- media -->
+					</div>
+				</div>
+			</div><!-- panel -->
+			<div class="panel panel-primary solutions-panel">
+				<div class="panel-heading" role="tab" id="deepcleanhead">
+					<h4 class="panel-title text-center">
+						<a href="#deepclean" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="deepclean">Industrial Deep Cleaning</a>
+					</h4>
+				</div>
+				<div class="collapse panel-collapse" id="deepclean" role="tabpanel" aria-labelledby="deepcleanhead">
+					<div class="panel-body">
+						<div class="media">
+							<div class="media-img pull-right">
+								<%= image_tag("paint_booth.png", alt: "paint booth cleaning photo", class: "media-object") %>
+							</div>
+							<div class="media-body">
+								<p>Utilizing our proprietary cleaning products and proccesses, we are able to deep clean any faciilty that may require periodic deep cleaning.</p>
+							</div>
+						</div><!-- media -->
+					</div>
+				</div>
+			</div><!-- panel -->
+		</div><!-- panel group -->
 	</div> <!-- col-xs-12 -->
 </div><!-- Row -->
