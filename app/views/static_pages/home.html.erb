@@ -10,24 +10,27 @@
 
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<%= link_to image_tag("gears.jpg", alt: "automotive stock photo", class: "img-responsive center-block carousel-image"), solutions_path %>
-					<div class="carousel-caption">
-						<h3>Innovative Products and Processes</h3>
-						<h5 class="hidden-xs">AutoChem Industrial's catalog of proprietary products and processes always ensure that your product is ready on-time and on budget.</h5>
-					</div>
-				</div>
-				<div class="item">
 					<%= link_to image_tag("auto2.jpg", alt: "automotive stock photo", class: "img-responsive center-block carousel-image"), solutions_path %>
 					<div class="carousel-caption">
-						<h3>Industrial Cleaning, Reenvisioned and Reimagined</h3>
-						<h5 class="hidden-xs">We always ask why, so your production needs are constantly reassesed and approached effectively and efficiently.</h5>
+						<h1>Innovative Products and Processes</h1>
+						<h3 class="hidden-xs">AutoChem Industrial's catalog of proprietary products and processes always ensure that your product is ready on-time and on budget.</h3>
+						<a href="<%= solutions_url %>" class="btn btn-default carousel-btn" role="button">AutoChem's Solutions</a>
 					</div>
 				</div>
 				<div class="item">
-					<%= link_to image_tag("auto1.jpg", alt: "automotive stock photo", class: "img-responsive center-block carousel-image"), solutions_path %>
+					<%= link_to image_tag("gears-lg.jpg", alt: "automotive stock photo", class: "img-responsive center-block carousel-image"), solutions_path %>
 					<div class="carousel-caption">
-						<h3>Our Commitment to Quality and Excelence</h3>
-						<h5 class="hidden-xs">Help our customers build and deliver better products, everyday.</h5>
+						<h1>Industrial Cleaning, Reenvisioned and Reimagined</h1>
+						<h3 class="hidden-xs">We always ask why, so your production needs are constantly reassesed and approached effectively and efficiently.</h3>
+						<a href="<%= solutions_url %>" class="btn btn-primary carousel-btn" role="button">AutoChem's Solutions</a>
+					</div>
+				</div>
+				<div class="item">
+					<%= link_to image_tag("auto1.jpg", alt: "automotive stock photo", class: "img-responsive center-block carousel-image"), about_path %>
+					<div class="carousel-caption">
+						<h1>Our Commitment to Quality and Excelence</h1>
+						<h3 class="hidden-xs">Help our customers build and deliver better products, everyday.</h3>
+						<a href="<%= about_url %>" class="btn btn-success carousel-btn" role="button">AutoChem's Commitment</a>
 					</div>
 				</div>
 			</div><!-- carousel inner -->
@@ -44,12 +47,12 @@
 		</div><!-- carousel -->
 	</div>
 </div>
-
+<!-- 
 <div class="center jumbotron">
 
 	<h1 class="text-center">AutoChem Industrial</h1>
 </div>
-
+ -->
 <div class="col-xs-12">
 	<h2 class="text-center">
 		Welcome to the AutoChem Industrial homepage. 
