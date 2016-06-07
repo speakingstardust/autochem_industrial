@@ -116,6 +116,18 @@ body {
 	background-color: #F5F5F5;
 }
 
+/* Home */
+
+@media (min-width: 768px) {
+  .panel-squeeze-left {
+    padding-right: 0px;
+  }
+  .panel-squeeze-right {
+    padding-left: 0px;
+  }
+}
+
+
 /* Contact Us */
 
 #border-line {
@@ -144,17 +156,17 @@ body {
   width: 100%;
 }*/
 
-/*.carousel .item {
+.carousel .item {
   height: 300px;
-}*/
+}
 
-/*.item img {
+.item img {
     position: center;
     top: 0;
     left: 0;
     min-height: 300px; 
     width: 100%;
-}*/
+}
 
 .carousel-btn {
   margin-bottom: 20px;
@@ -194,11 +206,11 @@ input {
 
 .solutions-panel > .panel-heading {
   background-image: none;
-  background-color: #b11b2e;
+  background-color: rgba(177, 27, 46, .8);
 }
 
 .solutions-panel {
-  border-color: #b11b2e;
+  border-color: rgba(177, 27, 46, .5);
 }
 
 .media img {
