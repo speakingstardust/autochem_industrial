@@ -12,11 +12,30 @@
 /* Header */
 
 nav .logo {
-	width: 128px;
+	height: 80px;
 }
 
 .navbar {
 	border: none;
+  min-height: 80px;
+}
+
+.navbar-nav li a {
+  min-height: 80px;
+  padding-top: 30px;
+}
+
+.navbar .button {
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+@media (max-width: 767px) {
+  .contact-button {
+    float: left !important;
+    margin-bottom: 30px;
+  }
 }
 
 .navbar-default {
@@ -158,6 +177,7 @@ body {
 
 .carousel .item {
   height: 300px;
+  width: 100%;
 }
 
 .item img {
@@ -170,6 +190,19 @@ body {
 
 .carousel-btn {
   margin-bottom: 20px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.carousel-pad {
+  padding: 0px;
+}
+
+#homecarousel h1{
+  text-shadow: 3px 3px rgba(177, 27, 46, .8);
+}
+
+#homecarousel h3 {
+  text-shadow: 1px 1px 2px black;
 }
 
 /* Forms */
