@@ -14,3 +14,11 @@
 
 # Ignore Spring files
 /spring/*.pid
+
+# Ignore Procfile
+
+Procfile
+
+# Ignore environment variables 
+# Ignore application configuration
+/config/application.yml
