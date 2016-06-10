@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     if @contact.valid?
       @contact.deliver
-      flash.now[:success] = 'Thank you for your message. We will contact you soon! You will be redirected to the home page in 3 seconds.'
+      flash.now[:success] = 'Thank you for your message. We will contact you soon! You will be redirected to the home page in 5 seconds.'
     else
       flash.now[:danger] = 'Cannot send message.'
       render :new 

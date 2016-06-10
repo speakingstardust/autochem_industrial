@@ -3,14 +3,30 @@
 	<div class="col-sm-6 col-xs-12 text-center">
 		<h1>Contact us today!</h1>
 		<h4>Our representatives are <em>always</em> prepared to address your needs:</h4>
+		<div class="container col-sm-12 well well-lg" id="contact-well">
+			<div class="row">
+				<div class="col-xs-9 text-left">
+					<h3>Phone:</h3>
+					<p><b>Voice:</b></p>
+					<p>(859)792-2117</p>	
+					<p><b>Fax:</b></p>
+					<p>(859)792-2103</p>
+				</div>
+				<div class="col-xs-3 col-sm-pull-1 col-md-pull-0 text-right">
+					<h3>Address:</h3>
+					<p>941 Stanford Rd</p>
+					<p>	Lancaster, KY 40444</p>	
+				</div>
+			</div> <!-- Secondary Row -->
+	</div> <!-- Secondary Container -->
 	</div>
-	<div class="col-xs-3 col-xs-push-3 hidden-xs thumbnail">
+	<div class="col-sm-4 col-sm-offset-2 hidden-xs thumbnail" style="margin-top: 20px;">
 		<%= image_tag("cardboard_plane_cat.jpg", alt: "placeholder image", class: "pull-right img-rounded") %>
 		<p class="text-center">This is a placeholder image!</p>
 	</div>
-</div>
+</div> <!-- Row -->
 <div class="row">
-	<div class="col-xs-6 contact-form">
+	<div class="col-xs-12 contact-form" style="margin-top:20px; margin-bottom: 20px;">
 		<%= form_for(@contact, html: { class: "form-horizontal" }) do |f| %>
 			<%= render 'shared/error_messages', object: f.object %>
 			<%= f.label :name %>
@@ -26,16 +42,6 @@
 
 			<%= f.submit "Send Message", class: "btn btn-primary" %>
 		<% end %>
-	</div>
-	<div class="col-xs-6 text-right">
-		<h3>Phone:</h3>
-		<p><b>Voice:</b></p>
-		<p>(859)792-2117</p>	
-		<p><b>Fax:</b></p>
-		<p>(859)792-2103</p>
-		<h3>Address:</h3>
-		<p>941 Stanford Rd</p>
-		<p>	Lancaster, KY 40444</p>
 	</div>
 </div> <!-- Row -->
 <div class="row">
