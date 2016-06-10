@@ -51,6 +51,13 @@ group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'quiet_assets'
+
+  # Guard 
+  gem 'guard-rails'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+  gem 'guard-bundler'
+
 end
 
 group :test do
