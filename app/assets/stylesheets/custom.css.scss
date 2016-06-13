@@ -147,6 +147,9 @@ body {
   }
 }
 
+.jumbotron h1 {
+  font-size: 3.5em;
+}
 
 /* Contact Us */
 
@@ -198,13 +201,21 @@ body {
   padding: 0px;
 }
 
-#homecarousel h1{
+#homecarousel h1 {
   text-shadow: 3px 3px rgba(177, 27, 46, .8);
+}
+
+@media (max-width: 768px) {
+  #homecarousel h1 {
+    margin-bottom: 30px
+  }
 }
 
 #homecarousel h3 {
   text-shadow: 1px 1px 2px black;
 }
+
+
 
 /* Forms */
 
