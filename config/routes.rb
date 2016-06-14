@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get 'signup'      => 'users#new'
   get 'about'       => 'static_pages#about'
   get 'solutions'   => 'static_pages#solutions'
+  get 'dip'         => 'static_pages#dip_cleaning'
+  get 'facility'    => 'static_pages#facility'
+  get 'custodial'   => 'static_pages#custodial'
   resources :users
 
   match '/contacts',     to: 'contacts#new',             via: 'get'

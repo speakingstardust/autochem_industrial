@@ -10,4 +10,13 @@ class StaticPagesController < ApplicationController
 
   def solutions
   end
+
+  def dip_cleaning
+  end
+
+  def facility
+  end
+
+  def custodial
+  end
 end

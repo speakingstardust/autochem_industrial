@@ -16,8 +16,15 @@
 
 					<%= link_to "Home", root_path %>
 				</li>
-				<li class="<%= active_class(solutions_path) %>">
-					<%= link_to "Solutions", solutions_path %>
+				<li class="<%= active_class(solutions_path) %> dropdown">
+					<a href="<%= solutions_path %>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solutions <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><%= link_to "Solutions Overview", solutions_path %></li>
+						<li role="seperator" class="divider"></li>
+						<li><%= link_to "Dip Cleaning", dip_path %></li>
+						<li><%= link_to "Facility Management", facility_path %></li>
+						<li><%= link_to "General Custodial", custodial_path %></li>
+					</ul>
 				</li>
 				<li class="<%= active_class(about_path) %>">
 					<%= link_to "Our Story", about_path %>

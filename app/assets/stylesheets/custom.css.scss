@@ -11,8 +11,12 @@
 
 /* General */
 
+hr {
+  border-color: black;
+}
 
 /* Header */
+
 
 nav .logo {
 	height: 80px;
@@ -20,12 +24,20 @@ nav .logo {
 
 .navbar {
 	border: none;
-  min-height: 80px;
+  margin-bottom: 0;
 }
 
-.navbar-nav li a {
+.navbar-brand, .navbar-nav > li > a {
   min-height: 80px;
   padding-top: 30px;
+}
+
+.dropdown-menu {
+  border-color: rgb(177, 27, 46);
+}
+
+.dropdown-menu > li > a {
+  height: 25px;
 }
 
 .navbar .button {
@@ -261,7 +273,8 @@ input {
 
 .solutions-panel > .panel-heading {
   background-image: none;
-  background-color: rgba(177, 27, 46, .8);
+  background-color: rgb(177, 27, 46);
+  color: white;
 }
 
 .solutions-panel {
@@ -270,6 +283,22 @@ input {
 
 .media img {
   width: 200px;
+}
+
+.solutions-accordion p, h5 {
+  text-decoration: none;
+  color: #000;
+}
+
+/*.solutions-accordion p:hover, h5:hover {
+  text-decoration: none;
+  color: #000;
+}
+*/
+/* Dip Cleaning */
+
+.dip-image {
+  margin-bottom: 30px;
 }
 
 
