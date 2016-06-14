@@ -1,0 +1,95 @@
+<% provide(:title, "Products and Partners") %>
+
+<div class="row">
+	<div class="col-xs-12">
+		<h1 class="text-center">AutoChem Industrial Products and Partners</h1>
+		<div class="jumbotron center">
+			<h3 class="text-center"><b>Proprietary Products, Innovatively Designed, and Ready to Work for You.</b></h3>
+
+			<p class="text-center">The cleaning products and solutions we use are designed by our partners <b>just for us</b>, and we combine them with <em>creative processes</em> designed <strong>just for your cleaning need</strong> to create an <strong><em>unparalleled level of cleanliness in your factory or facility</em></strong>.</p>
+		</div>
+	</div><!-- col-xs-12 -->
+</div> <!-- Row -->
+<div class="row">
+	<div class="col-xs-12 solutions-accordion">
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselctable="true">
+			<div class="panel panel-primary solutions-panel">
+				<div class="panel-heading" role="tab" id="dipcleanhead">
+					<h4 class="panel-title text-center">
+						<a href="#dipcleaning" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="dipcleaning">MEICO</a>
+					</h4>
+				</div>
+				<div class="collapse panel-collapse in" id="dipcleaning" role="tabpanel" aria-labelledby="dipcleanhead">
+					<div class="panel-body">
+						<a href="<%= meico_url %>">
+							<div class="media">
+								<div class="media-img pull-left hidden-xs">
+									<%= image_tag("Nest.jpg", alt: "Paint jig photo", class: "media-object") %>
+								</div>
+								<div class="media-body">
+									<p>Moon Eyed Imaginering Company Inc. is the source of many of our proprietary products which we use as an integral part of our cleaning processes.</p>
+								</div>
+							</div> <!-- media -->
+						</a>
+					</div>
+				</div>
+			</div><!-- Dip Cleaning panel -->
+			<div class="panel panel-primary solutions-panel">
+				<div class="panel-heading" role="tab" id="facilitymanagementhead">
+					<h4 class="panel-title text-center">
+						<a href="#facilitymanagement" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="facilitymanagement">Epps</a>
+					</h4>
+				</div>
+				<div class="collapse panel-collapse" id="facilitymanagement" role="tabpanel" aria-labelledby="facilitymanagementhead">
+					<div class="panel-body">
+						<a href="<%= facility_url %>">
+							<div class="media">
+								<div class="media-img pull-right hidden-xs">
+									<%= image_tag("Facility.jpg", alt: "facility management photo", class: "media-object") %>
+								</div>
+								<div class="media-body">
+									<p>Epps is an innovative manufacturer of pressure washers that we use everday, for many of our cleaning projects.</p>
+								</div>
+							</div><!-- media -->
+						</a>
+					</div>
+				</div>
+			</div><!-- panel -->
+			<div class="panel panel-primary solutions-panel">
+				<div class="panel-heading" role="tab" id="custodialthead">
+					<h4 class="panel-title text-center">
+						<a href="#custodial" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="custodial">Products Overview</a>
+					</h4>
+				</div>
+				<div class="collapse panel-collapse" id="custodial" role="tabpanel" aria-labelledby="custodialhead">
+					<div class="panel-body">
+						<a href="<%= custodial_url %>">
+							<div class="media">
+								<div class="media-img pull-left hidden-xs">
+									<%= image_tag("custodial.jpg", alt: "general custodial photo", class: "media-object") %>
+								</div>
+								<div class="media-body">
+									<p>Here we can list the products that we want featured.</p>
+								</div>
+							</div><!-- media -->
+						</a>
+					</div>
+					<ul class="list-group" style="margin-bottom: 0;">
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading">Jig Strip</h4>
+							<p class="list-group-item-text">Here we would give what information we feel is important about a product.</p>
+						</li>
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading">Bean Clean</h4>
+							<p class="list-group-item-text">Here we would give what information we feel is important about a product.</p>
+						</li>
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading">LiquiTac</h4>
+							<p class="list-group-item-text">Here we would give what information we feel is important about a product.</p>
+						</li>
+				</ul>
+				</div>
+			</div><!-- panel -->
+		</div><!-- panel group -->
+	</div> <!-- col-xs-12 -->
+</div><!-- Row -->
