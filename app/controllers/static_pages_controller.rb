@@ -19,4 +19,13 @@ class StaticPagesController < ApplicationController
 
   def custodial
   end
+
+  def products
+  end
+
+  def meico
+  end
+
+  def epps
+  end
 end

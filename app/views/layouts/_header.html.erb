@@ -26,6 +26,15 @@
 						<li><%= link_to "General Custodial", custodial_path %></li>
 					</ul>
 				</li>
+				<li class="<%= active_class(products_path) %> dropdown">
+					<a href="<%= products_path %>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products and Partners <span class="caret"></span></a>
+					<ul class="dropdown-menu product-dropdown">
+						<li><%= link_to "Products Overview", products_path %></li>
+						<li role="seperator" class="divider"></li>
+						<li><%= link_to "MEICO", meico_path %></li>
+						<li><%= link_to "Epps", epps_path %></li>
+					</ul>
+				</li>
 				<li class="<%= active_class(about_path) %>">
 					<%= link_to "Our Story", about_path %>
 				</li>

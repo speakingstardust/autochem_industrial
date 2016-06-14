@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'dip'         => 'static_pages#dip_cleaning'
   get 'facility'    => 'static_pages#facility'
   get 'custodial'   => 'static_pages#custodial'
+  get 'meico'       => 'static_pages#meico'
+  get 'epps'        => 'static_pages#epps'
+  get 'products'    => 'static_pages#products'
   resources :users
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
