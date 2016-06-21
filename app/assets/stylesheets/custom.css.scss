@@ -18,6 +18,10 @@ hr {
 /* Header */
 
 
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
 nav .logo {
 	height: 80px;
 }
