@@ -33,7 +33,14 @@
 					<ul class="dropdown-menu product-dropdown">
 						<li><%= link_to "Products Overview", products_path %></li>
 						<li role="seperator" class="divider"></li>
-						<li><%= link_to "MEICO", meico_path %></li>
+						<li>
+							<a class="trigger right-caret">Meico</a>
+							<ul class="dropdown-menu sub-menu">
+								<li>
+									<%= link_to "About MEICO", meico_path %>
+								</li>
+							</ul>
+						</li>
 						<li><%= link_to "Epps", epps_path %></li>
 					</ul>
 				</li>

@@ -10,6 +10,13 @@ Rails.application.routes.draw do
   get 'meico'       => 'static_pages#meico'
   get 'epps'        => 'static_pages#epps'
   get 'products'    => 'static_pages#products'
+  get 'jig_strip'   => 'static_pages#jig_strip'
+  get 'jig_rinse'   => 'static_pages#jig_rinse'
+  get 'grate_strip' => 'static_pages#grate_strip'
+  get 'grate_strip_rev_2'   => 'static_pages#grate_strip_rev_2'
+  get 'bean_clean'  => 'static_pages#bean_clean'
+  get 'bean_clean_rev_2'  => 'static_pages#bean_clean_rev_2'
+  get 'liquitac'  => 'static_pages#liquitac'
   resources :users
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
