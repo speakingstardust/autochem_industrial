@@ -10,7 +10,7 @@ class Contact < MailForm::Base
   def headers
     {
       :subject => "AutoChem Industrial Contact Form Request",
-      :to => "admin@autochemky.com",
+      :to => "service@autochemind.com",
       :from => %("#{name}" <#{email}>)
     }
   end
